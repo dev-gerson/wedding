@@ -540,7 +540,22 @@
 			$('body').removeClass('gla_second_step');
 		}
 	});
-
+	$(document.body).on('touchmove', function(){
+		if ($(window).scrollTop() > 100) {
+			$(".gla_logo").addClass('active');
+			$('body').addClass('gla_first_step');
+		}
+		else {
+			$('body').removeClass('gla_first_step');
+			$(".gla_logo").removeClass('active');
+		}
+		if ($(window).scrollTop() > 500) {
+			$('body').addClass('gla_second_step');
+		}
+		else {
+			$('body').removeClass('gla_second_step');
+		}
+	}); 
 	/* Fixed for Parallax */
 	$(".gla_fixed").css("background-attachment","fixed");
 
