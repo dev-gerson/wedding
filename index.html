@@ -16099,13 +16099,13 @@
         /*05.1 Slider Text*/
         .gla_slide_txt {
             position: absolute;
-            width: 50%;
+            width: 73%;
         }
 
         .gla_slide_txt.gla_slide_center_middle,
         .gla_slide_txt.gla_slide_center_top,
         .gla_slide_txt.gla_slide_center_bottom {
-            width: 70%;
+            width: 73%;
         }
 
         .gla_slide_txt img {
@@ -16160,8 +16160,8 @@
         }
 
         .gla_slide_center_middle {
-            left: 30%;
-            top: 50%;
+            left: 75%;
+            top: 30%;
             transform: translateY(-50%) translateX(-50%);
         }
 
@@ -16614,8 +16614,6 @@
             height: 199px;
         }
 
-
-
         .gla_slider_flower_iii.gla_slider_flower_c1 {
             background-image: url("./src/images/flowers/fl3_c1.png");
             width: 400px;
@@ -16682,6 +16680,77 @@
             position: absolute;
             right: 0;
             top: 0;
+        }
+
+        /* @media (min-width:320px) or (min-width:481px) { */
+        @media only screen and (max-width: 600px) {
+            .gla_slider_flower_ii.gla_slider_flower_c1 {
+                width: 150px;
+                height: 170px;
+            }
+
+            .gla_slider_flower_ii.gla_slider_flower_c2 {
+                width: 135px;
+                height: 180px;
+            }
+
+            .gla_slider_flower_ii.gla_slider_flower_c3 {
+                width: 150px;
+                height: 160px;
+            }
+
+            .gla_slider_flower_ii.gla_slider_flower_c4 {
+                width: 295px;
+                height: 320px;
+            }
+
+            .gla_slider_flower_ii.gla_slider_flower_c5 {
+                width: 394px;
+                height: 135px;
+            }
+
+            .gla_slider_flower_ii.gla_slider_flower_c6 {
+                width: 285px;
+                height: 127px;
+            }
+
+            .gla_slider_flower_iii.gla_slider_flower_c1 {
+                width: 150px;
+                height: 256px;
+            }
+
+            .gla_slider_flower_iii.gla_slider_flower_c2 {
+                width: 150px;
+                height: 443px;
+            }
+
+            .gla_slider_flower_iii.gla_slider_flower_c3 {
+                width: 125px;
+                height: 315px;
+            }
+
+            .gla_slider_flower_iii.gla_slider_flower_c4 {
+                width: 150px;
+                height: 365px;
+            }
+
+            .gla_slider_flower_iii.gla_slider_flower_c5 {
+                width: 160px;
+                height: 217px;
+                transform: translateX(-39%);
+            }
+
+            .gla_slider_flower_iii.gla_slider_flower_c6 {
+                width: 500px;
+                height: 183px;
+            }
+
+            .gla_slide_txt,
+            .gla_slide_txt.gla_slide_center_middle,
+            .gla_slide_txt.gla_slide_center_top,
+            .gla_slide_txt.gla_slide_center_bottom {
+                top: 73%;
+            }
         }
 
         .active .gla_slider_flower_c2 {
@@ -17308,7 +17377,7 @@
         }
 
         .text-center .countdown-section {
-            margin: 0 30px;
+            margin: 0 20px;
         }
 
         .countdown-amount {
@@ -20195,7 +20264,7 @@
             .gla_slide_txt.gla_slide_center_bottom {
                 width: 100%;
                 left: 0;
-                top: 50%;
+                top: 73%;
                 transform: translateY(-50%);
                 padding: 0 10px;
             }
@@ -21167,7 +21236,7 @@
         <!-- Slider -->
         <div class="gla_slider gla_image_bck gla_wht_txt gla_fixed" data-stellar-background-ratio="0.2"
             data-image="src/images/portada.jpg"
-            style="background-image: url(&quot;src/images/portada.jpg&quot;); background-attachment: fixed; background-position: 50% 0px;">
+            style="background-image: url(&quot;src/images/portada.jpg&quot;); background-attachment: fixed; background-position: -315px 0px;">
 
             <div class="gla_slider_flower">
                 <div class="gla_slider_flower_c1 gla_slider_flower_ii gla_slider_flower_item skrollable skrollable-between"
@@ -21388,8 +21457,8 @@
                                 <span class="hour">5:00 pm</span>
                                 <br>
                                 <br>
-                                Iglesia Parroquial de<br>
-                                San Mateo Apostol
+                                Iglesia San Mateo Apostol<br />
+                                Salamá, Baja Verapaz
                             </p>
 
                             <button class="">Ver Mapa</button>
@@ -21402,7 +21471,7 @@
                                 <span class="hour">6:00 pm</span>
                                 <br>
                                 <br>
-                                Villa Japonesa,
+                                Villa Japonesa
                                 <br>
                                 Salamá, Baja Verapaz
                             </p>
@@ -21424,7 +21493,7 @@
                 }
 
                 #footer img.just-married {
-                    width: 35%;
+                    width: 70%;
                 }
 
                 #footer button {
