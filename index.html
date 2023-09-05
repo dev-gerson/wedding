@@ -16170,7 +16170,7 @@
 
         .gla_slide_center_middle {
             left: 20%;
-            top: 30%;
+            top: 55%;
             transform: translateY(-50%) translateX(-50%);
         }
 
@@ -16692,7 +16692,7 @@
         }
 
         .home-novios {
-            background-position: 0px -110px !important;
+            background-position: 0px -525px !important;
             background-repeat: no-repeat !important;
         }
 
@@ -16719,8 +16719,8 @@
             }
 
             .gla_slider_flower_ii.gla_slider_flower_c5 {
-                width: 394px;
-                height: 135px;
+                width: 280px;
+                height: 93px;
             }
 
             .gla_slider_flower_ii.gla_slider_flower_c6 {
@@ -16772,7 +16772,7 @@
             }
 
             .home-novios {
-                background-position: 50% 0px !important;
+                background-position: 50% -50px !important;
                 background-repeat: no-repeat !important;
             }
 
@@ -16796,8 +16796,9 @@
                 bottom: 0 !important;
                 left: 0 !important;
             }
-            .flower-mobile{
-                display:none !important;
+
+            .flower-mobile {
+                display: none !important;
             }
         }
 
@@ -20311,8 +20312,8 @@
             .gla_slide_txt.gla_slide_center_top,
             .gla_slide_txt.gla_slide_center_bottom {
                 width: 100%;
-                left: 0;
-                top: 70%;
+                left: -25%;
+                top: 45%;
                 transform: translateY(-50%);
                 padding: 0 10px;
             }
@@ -21264,11 +21265,51 @@
         }
     </style>
 
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.cdnfonts.com/css/wedding" rel="stylesheet">
+    <style>
+        .mi_fuente {
+            font-family: 'Wedding', sans-serif;
+        }
+    </style>
 </head>
 
 <body class="gla_middle_titles  pace-done">
+    <style>
+        #audio-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+
+        #audio-player {
+            display: none;
+        }
+
+        #audio-button {
+            background-color: white;
+            color: #595959;
+            padding: 10px 15px;
+            border: solid 2px #595959;
+            border-radius: 50%;
+            cursor: pointer;
+
+        }
+
+        #audio-container img {
+            max-width: 15px;
+        }
+    </style>
+    <div id="audio-container">
+        <audio id="audio-player" controls>
+            <source src="./src/audio/principal.mp3" type="audio/mpeg">
+        </audio>
+        <button id="audio-button">
+            <img src="https://icons.veryicon.com/png/o/internet--web/web-video-clip/play-332.png" />
+        </button>
+    </div>
+
     <div class="pace  pace-inactive">
         <div class="pace-progress" data-progress-text="100%" data-progress="99"
             style="transform: translate3d(100%, 0px, 0px);">
@@ -21280,28 +21321,29 @@
 
     <!-- Page -->
     <div class="gla_page" id="gla_page">
+
         <!-- Slider -->
         <div id="portada2" class="gla_slider gla_image_bck gla_wht_txt gla_fixed home-novios"
-            data-stellar-background-ratio="0.2" data-image="src/images/portada3.jpeg"
-            style="background-image: url(&quot;src/images/portada3.jpeg&quot;); background-attachment: fixed; background-position: 0px -590px;">
+            data-stellar-background-ratio="0.2" data-image="src/images/portada2.jpg"
+            style="background-image: url(&quot;src/images/portada2.jpg&quot;); background-attachment: fixed; background-position: 0px -590px;">
 
             <div class="gla_slider_flower">
                 <div class="gla_slider_flower_c1 gla_slider_flower_ii gla_slider_flower_item skrollable skrollable-between flower-mobile"
                     data-start="top:0px; left:0px" data-200-start="top:-300px; left:-300px"
                     style="top: 0px; left: 0px;"></div>
-                <div class="gla_slider_flower_c2 gla_slider_flower_ii gla_slider_flower_item skrollable skrollable-between flower-mobile"
+                <div class="gla_slider_flower_c2 gla_slider_flower_ii gla_slider_flower_item skrollable skrollable-between"
                     data-start="top:0px; right:0px" data-200-start="top:-300px; right:-300px"
                     style="top: 0px; right: 0px;"></div>
-                <div class="gla_slider_flower_c3 gla_slider_flower_ii gla_slider_flower_item skrollable skrollable-between"
+                <div class="gla_slider_flower_c3 gla_slider_flower_ii gla_slider_flower_item skrollable skrollable-between flower-mobile"
                     data-start="bottom:0px; right:0px" data-200-start="bottom:-300px; right:-300px"
                     style="bottom: 0px; right: 0px;"></div>
-                <div class="gla_slider_flower_c4 gla_slider_flower_ii gla_slider_flower_item skrollable skrollable-between"
+                <div class="gla_slider_flower_c4 gla_slider_flower_ii gla_slider_flower_item skrollable skrollable-between flower-mobile"
                     data-start="bottom:0px; left:0px" data-200-start="bottom:-300px; left:-300px"
                     style="bottom: 0px; left: 0px;"></div>
-                <div class="gla_slider_flower_c5 gla_slider_flower_ii gla_slider_flower_item skrollable skrollable-between flower-mobile"
+                <div class="gla_slider_flower_c5 gla_slider_flower_ii gla_slider_flower_item skrollable skrollable-between"
                     data-start="top:0px; left:50%" data-200-start="top:-300px; left:50%" style="top: 0px; left: 50%;">
                 </div>
-                <div class="gla_slider_flower_c6 gla_slider_flower_ii gla_slider_flower_item skrollable skrollable-between"
+                <div class="gla_slider_flower_c6 gla_slider_flower_ii gla_slider_flower_item skrollable skrollable-between flower-mobile"
                     data-start="bottom:0px; left:50%" data-200-start="bottom:-300px; left:50%"
                     style="bottom: 0px; left: 50%;"></div>
             </div>
@@ -21317,7 +21359,8 @@
                 <div class="gla_slide_txt gla_slide_center_middle text-center">
 
                     <p><img src="./src/ourwedding_wh.gif" data-top-bottom="@src:/src/ourwedding_wh.gif" alt=""
-                            height="150" class="skrollable skrollable-before"></p>
+                            height="150"
+                            class="skrollable skrollable-before animate__animated animate__lightSpeedInLeft"></p>
 
 
                 </div>
@@ -21332,8 +21375,51 @@
 
         <!-- Content -->
         <section id="gla_content" class="gla_content">
+            <section class="gla_section gla_lg_padding gla_image_bck gla_fixed" data-stellar-background-ratio="0.2"
+                data-image="images/wedding/ian_kelsey/14815177364_46f0b9d71e_k.jpg"
+                style="background-image: url(&quot;images/wedding/ian_kelsey/14815177364_46f0b9d71e_k.jpg&quot;); background-attachment: fixed; background-position: 50% 317.6px;">
 
+                <div class="gla_slider_flower active" data-bottom-top="@class:gla_slider_flower active"
+                    data--200-bottom="@class:gla_slider_flower no_active" style="">
+                    <div class="gla_slider_flower_c1 gla_slider_flower_ii gla_slider_flower_item"></div>
+                    <div class="gla_slider_flower_c2 gla_slider_flower_ii gla_slider_flower_item"></div>
+                    <div class="gla_slider_flower_c3 gla_slider_flower_ii gla_slider_flower_item"></div>
+                    <div class="gla_slider_flower_c4 gla_slider_flower_ii gla_slider_flower_item"></div>
+                    <div class="gla_slider_flower_c5 gla_slider_flower_ii gla_slider_flower_item"></div>
+                    <div class="gla_slider_flower_c6 gla_slider_flower_ii gla_slider_flower_item"></div>
+                </div>
 
+                <!-- Over -->
+                <div class="gla_over" data-color="#fbe9df" data-opacity="0.5"
+                    style="background-color: rgb(251, 233, 223); opacity: 0.5;"></div>
+
+                <div class="container text-center animate__animated  animate__zoomIn">
+                    <h3>Con la bendición de Dios y nuestros padres</h3>
+                    <div class="event-address ">
+                        <div class="ceremonia">
+                            <p>
+                                <span class="title">Novio</span>
+                                <br>
+                                <br>
+                                <span class="hour">Gesta Pinula Suy</span>
+                                <br>
+                                <span class="hour">Argelia Rodríguez Hernández</span>
+                            </p>
+                        </div>
+                        <div class="recepecion">
+                            <p>
+                                <span class="title">Novia</span>
+                                <br>
+                                <br>
+                                <span class="hour">Cruz Moya Adqui</span>
+                                <br>
+                                <span class="hour">Bernarda Ché Pérez</span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- container end -->
+
+            </section>
             <!-- section -->
             <section class="gla_section gla_lg_padding gla_image_bck gla_fixed gla_wht_txt"
                 data-stellar-background-ratio="0.2" data-image=""
@@ -21355,8 +21441,10 @@
 
                 <div class="container text-center">
 
-                    <p><img src="./src/savethedate_wh.gif" data-bottom-top="@src:src/savethedate_wh.gif" height="150"
-                            alt="" class="skrollable skrollable-before"></p>
+                    <!-- <p><img src="./src/savethedate_wh.gif" data-bottom-top="@src:src/savethedate_wh.gif" height="150" alt="" class="skrollable skrollable-before"></p> -->
+                    <h4>Nuestro momento ha llegado...</h4>
+
+                    <h3><b>¡NOS CASAMOS!</b></h3>
                     <h2>23 de Septiembre 2023</h2>
                     <h3 class="gla_subtitle">Salamá, Baja Verapaz</h3>
                     <div class="gla_countdown is-countdown" data-year="2017" data-month="08" data-day="10"><span
@@ -21379,7 +21467,7 @@
                         </span></div>
                     <br>
                     <a class="save-date"
-                        href="https://www.google.com/calendar/render?action=TEMPLATE&text=Boda%20Gerson-Katty&dates=20230923/20230924&details=Ceremonia<br>5:00 pm<br>Iglesia San Mateo Apostol<br>Salamá, Baja Verapaz<br>https://goo.gl/maps/NLzjZ6Wy5HX5MGmP9<br><br>Recepción<br>6:30 pm<br>Villa Japonesa<br>Salamá, Baja Verapaz<br>https://goo.gl/maps/UNKV77qCgZtRVi8M8">
+                        href="https://www.google.com/calendar/render?action=TEMPLATE&text=Boda%20Gerson-Katty&dates=20230923/20230924&details=Ceremonia<br>5:00 pm<br>Iglesia San Mateo Apostol<br>Salamá, Baja Verapaz<br>https://goo.gl/maps/NLzjZ6Wy5HX5MGmP9<br><br>Recepción<br>7:00 pm<br>Villa Japonesa<br>Salamá, Baja Verapaz<br>https://goo.gl/maps/UNKV77qCgZtRVi8M8">
                         Guardar fecha
                     </a>
                     <style>
@@ -21400,7 +21488,7 @@
 
                     <script>
                         // Define la fecha de destino (puedes cambiar esta fecha)
-                        const fechaDestino = new Date("2023-09-23T18:30:00");
+                        const fechaDestino = new Date("2023-09-23T19:00:00");
 
                         function actualizarContador() {
                             const ahora = new Date();
@@ -21428,7 +21516,6 @@
 
             </section>
             <!-- section end -->
-
 
             <!-- section -->
             <section class="gla_section gla_lg_padding gla_image_bck gla_fixed" data-stellar-background-ratio="0.2"
@@ -21519,7 +21606,7 @@
                             <p>
                                 <span class="title">Recepción</span>
                                 <br>
-                                <span class="hour">6:30 pm</span>
+                                <span class="hour">7:00 pm</span>
                                 <br>
                                 <br>
                                 Villa Japonesa
@@ -21535,14 +21622,58 @@
                 <!-- container end -->
 
             </section>
+
+            <section class="gla_section gla_lg_padding gla_image_bck gla_fixed gla_wht_txt"
+                data-stellar-background-ratio="0.2" data-image=""
+                style="background:white; background-attachment: fixed; background-position: 50% 128.6px;">
+
+                <div class="gla_slider_flower active" data-bottom-top="@class:gla_slider_flower active"
+                    data--200-bottom="@class:gla_slider_flower no_active" style="">
+                    <div class="gla_slider_flower_c1 gla_slider_flower_ii gla_slider_flower_item"></div>
+                    <div class="gla_slider_flower_c2 gla_slider_flower_ii gla_slider_flower_item"></div>
+                    <!-- <div class="gla_slider_flower_c3 gla_slider_flower_ii gla_slider_flower_item"></div> -->
+                    <!-- <div class="gla_slider_flower_c4 gla_slider_flower_ii gla_slider_flower_item"></div> -->
+                    <div class="gla_slider_flower_c5 gla_slider_flower_ii gla_slider_flower_item"></div>
+                    <!-- <div class="gla_slider_flower_c6 gla_slider_flower_ii gla_slider_flower_item"></div> -->
+                </div>
+
+                <!-- Over -->
+                <div class="gla_over" data-color="#000" data-opacity="0.3"
+                    style="background-color: rgb(0, 0, 0); opacity: 0.3;"></div>
+
+                <div class="container text-center">
+
+                    <div id="footer" class="container">
+                        <h3>
+                            Compartir momentos contigo los hace inolvidables.
+                            <br><br>
+                            <b>¡Te esperamos en nuestra boda!</b>
+                        </h3>
+                        <br>
+                        <p>confirma tu asistencia, enviando un WhatsApp</p>
+                        <a
+                            href="https://wa.me/+50230900561/?text=*Boda%20Gerson-Katty*%0AConfirmo mi asistencia.%0A%0A*Nombre:*__%0A*No.%20Personas:*__">
+                            <img
+                                src="https://static.wixstatic.com/media/37718c_ca3cd78a6e114446a1106c8f1d7f050a~mv2.png/v1/fill/w_60,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/vecteezy_whatsapp-logo-transparent-png_22101124_293.png" />
+                            Enviar Mensaje
+                        </a>
+                        <div class="row"></div>
+                        <br>
+                        <img class="just-married" src="./src/images/just_married.webp" />
+                    </div>
+                </div>
+                <!-- container end -->
+
+            </section>
             <!-- section end -->
             <style>
                 #footer {
-                    background: #fcf3ee;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
                 }
 
                 #footer img {
-                    height: 50px;
+                    height: 30px;
                 }
 
                 #footer img.just-married {
@@ -21566,34 +21697,6 @@
                     text-decoration: none;
                 }
             </style>
-            <section id="footer" class="text-center">
-
-                <div class="container">
-                    <div class="container">
-                        <br>
-                        <h4>
-                            Compartir momentos contigo los hace inolvidables.
-                            <br><br>
-                            <b>¡Te esperamos en nuestra boda!</b>
-                        </h4>
-                        <br>
-                        <br>
-                        <h4>confirma tu asistencia, enviando un WhatsApp</h5>
-                    </div>
-                </div>
-
-                <a
-                    href="https://wa.me/+50230900561/?text=*Boda%20Gerson-Katty*%0AConfirmo mi asistencia.%0A%0A*Nombre:*__%0A*No.%20Personas:*__">
-                    <img
-                        src="https://static.wixstatic.com/media/37718c_ca3cd78a6e114446a1106c8f1d7f050a~mv2.png/v1/fill/w_60,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/vecteezy_whatsapp-logo-transparent-png_22101124_293.png" />
-                    Enviar Mensaje
-                </a>
-
-                <br>
-                <br>
-                <br>
-                <img class="just-married" src="./src/images/just_married.webp" />
-            </section>
 
         </section>
         <!-- Content End -->
@@ -21614,7 +21717,26 @@
     <!-- Theme JS -->
     <script src="./src/glanz_script.js.descarga"></script>
 
+    <script>
+        const audioPlayer = document.getElementById("audio-player");
+        const audioButton = document.getElementById("audio-button");
 
+        let isPlaying = false;
+
+        audioButton.addEventListener("click", () => {
+            if (isPlaying) {
+                audioPlayer.pause();
+                audioButton.innerHTML = '<img src="https://icons.veryicon.com/png/o/internet--web/web-video-clip/play-332.png" />';
+            } else {
+                audioPlayer.play();
+                audioButton.innerHTML = '<img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-pause-512.png" />';
+            }
+            isPlaying = !isPlaying;
+        });
+        $(document).ready(function () {
+            // $("#audio-button").click();
+        });
+    </script>
 
 </body><editor-card style="position:absolute;top:0px;left:0px;z-index:auto;display: block !important">
     <div dir="ltr" style="all: initial;">
