@@ -21294,14 +21294,19 @@
             display: none;
         }
 
+        #audio-player:after {
+            
+        }
+
         #audio-button {
-            background-color: white;
-            color: #595959;
+            color: #000000;
             padding: 10px 15px;
-            border: solid 2px #595959;
+            border: solid 1px #000000;
             border-radius: 50%;
             cursor: pointer;
-
+            background:transparent;background: rgb(224, 171, 6);
+            background-color: linear-gradient(90deg, rgba(224, 171, 6, 1) 0%, rgba(255, 255, 255, 1) 100%);
+            
         }
 
         #audio-container img {
@@ -21313,7 +21318,7 @@
             <source src="./src/audio/principal.mp3" type="audio/mpeg">
         </audio>
         <button id="audio-button">
-            <img src="https://icons.veryicon.com/png/o/internet--web/web-video-clip/play-332.png" />
+            <img src="https://icon-library.com/images/music-icon-transparent/music-icon-transparent-6.jpg" />
         </button>
     </div>
 
@@ -21363,7 +21368,7 @@
                 <link href="https://fonts.cdnfonts.com/css/feeling-lovely" rel="stylesheet">
                 <link href="https://fonts.cdnfonts.com/css/wedding-script" rel="stylesheet">
                 <link href="https://fonts.cdnfonts.com/css/majestic-romance" rel="stylesheet">
-                
+
 
                 <style>
                     .nuestra_boda {
@@ -21376,20 +21381,25 @@
                     .nombres {
                         font-family: 'Feeling Lovely', sans-serif;
                         /* color: ; */
-                        color: rgb(224, 171, 6);
-                        color: linear-gradient(90deg, rgba(224, 171, 6, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                        /* color: rgb(224, 171, 6);
+                        color: linear-gradient(90deg, rgba(224, 171, 6, 1) 0%, rgba(255, 255, 255, 1) 100%); */
+                        color: #ffff;
                     }
-                    body{
+
+                    body {
                         font-family: 'Majestic Romance', sans-serif !important;
                     }
+
                     .nombres_padres {
                         font-family: 'Majestic Romance', sans-serif !important;
-                                                
+
                     }
-                    .nombres_padres h3{
+
+                    .nombres_padres h3 {
                         font-family: 'Majestic Romance', sans-serif !important;
-                                                
+
                     }
+
                     .sub_nombres {
                         font-family: 'Majestic Romance', sans-serif !important;
                     }
@@ -21432,13 +21442,14 @@
                         }
                     }
                 </style>
-                <div class="gla_slide_txt gla_slide_center_middle frase">
+                <div class="gla_slide_txt gla_slide_center_middle frase" style="margin-top: 15px;">
                     <p class="sub_nombres animate__animated animate__lightSpeedInLeft"
                         style="font-size:3rem;font-weight:bolder;text-shadow: 0px 1px 2px black;">
                         - Nuestra Boda -
                         <br>
                         <br>
-                        <small style="font-size:1.5rem;" class="sub_nombres">Amar no es mirarse el uno al otro sino mirar juntos en la misma
+                        <small style="font-size:1.5rem;" class="sub_nombres">Amar no es mirarse el uno al otro sino
+                            mirar juntos en la misma
                             direccion. Por eso decidimos unir nuestras vidas</small>
                     </p>
                 </div>
@@ -21475,9 +21486,12 @@
                 <!-- <p><img src="./src/savethedate_wh.gif" data-bottom-top="@src:src/savethedate_wh.gif" height="150" alt="" class="skrollable skrollable-before"></p> -->
                 <h4>Nuestro momento ha llegado...</h4>
 
-                <h3><b>¡NOS CASAMOS!</b></h3>
-		    <p>Y nos encantaría compartir con ustedes, este dia tan especial.</p>
+                <h3 style="margin-bottom: 25px;"><b>¡NOS CASAMOS!</b></h3>
+                <h4 ><small style="color:white;">Y nos encantaría compartir con ustedes, este dia tan especial.</small></h4>
+                <br>
+                <br>
                 <img src="./src/images/bodas rings.png" height="65" />
+                
                 <h2>23 de Septiembre 2023</h2>
                 <h3 class="gla_subtitle">Salamá, Baja Verapaz</h3>
                 <div class="gla_countdown is-countdown" data-year="2017" data-month="08" data-day="10"><span
@@ -21810,7 +21824,7 @@
         audioButton.addEventListener("click", () => {
             if (isPlaying) {
                 audioPlayer.pause();
-                audioButton.innerHTML = '<img src="https://icons.veryicon.com/png/o/internet--web/web-video-clip/play-332.png" />';
+                audioButton.innerHTML = '<img src="https://icon-library.com/images/music-icon-transparent/music-icon-transparent-6.jpg" />';
             } else {
                 audioPlayer.play();
                 audioButton.innerHTML = '<img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-pause-512.png" />';
